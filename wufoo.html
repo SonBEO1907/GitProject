@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market Research Survey</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .form-container h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .form-container p.description {
+      font-size: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #555;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-size: 16px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 14px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    .options-group {
+      margin-left: 10px;
+    }
+
+    .options-group label {
+      display: block;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 50%;
+      padding: 20px;
+      background: #0066cc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: auto;
+    }
+
+    .submit-btn:hover {
+      background: #004999;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="form-container" action="#" method="post">
+    <h1>Market Research Survey</h1>
+    <p class="description">Please take a few moments to complete this satisfaction survey.</p>
+
+    <div class="form-group">
+      <label>What is your age range?</label>
+      <div class="options-group">
+        <label><input type="radio" name="ageRange" value="18-24"> 18–24</label>
+        <label><input type="radio" name="ageRange" value="25-34"> 25–34</label>
+        <label><input type="radio" name="ageRange" value="35-50"> 35–50</label>
+        <label><input type="radio" name="ageRange" value="50plus"> 50+</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>What is your yearly income range?</label>
+      <div class="options-group">
+        <label><input type="radio" name="incomeRange" value="0-25000"> $0–$25,000</label>
+        <label><input type="radio" name="incomeRange" value="25001-50000"> $25,001–$50,000</label>
+        <label><input type="radio" name="incomeRange" value="50001-100000"> $50,001–$100,000</label>
+        <label><input type="radio" name="incomeRange" value="100000plus"> $100,000+</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Gender Identity</label>
+      <div class="options-group">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="nonbinary"> Nonbinary</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Which of the following products have you purchased in the last 2 months? (Check all that apply)</label>
+      <div class="options-group">
+        <label><input type="checkbox" name="products[]" value="product1"> Product 1</label>
+        <label><input type="checkbox" name="products[]" value="product2"> Product 2</label>
+        <label><input type="checkbox" name="products[]" value="product3"> Product 3</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>How often would you use our new product?</label>
+      <div class="options-group">
+        <label><input type="radio" name="usage" value="daily"> Daily</label>
+        <label><input type="radio" name="usage" value="weekly"> Weekly</label>
+        <label><input type="radio" name="usage" value="monthly"> Monthly</label>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+
+</body>
+</html>
