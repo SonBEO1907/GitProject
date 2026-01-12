@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th{
+        font-size:30px;
+        font-weight:400;
+        color:#fff;
+        text-align:center;
+        padding:20px;
+        background-color: #d61b06;
+        border-color: white;
+    }
+
+    .formtext{
+        font-size:16px;
+        font-weight:400;
+        margin-right: 100px;
+    }
+
+    .custom1 {
+        display: flex;
+    }
+
+    .textfield {
+        width: 500px;
+        height: 40px;
+    }
+
+</style>
+<body>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th>
+                    Sở thích của bạn
+                </th>
+            </tr>
+            <tr>
+                <td class="custom1">
+                    <p class="formtext">Họ và Tên</p>
+                    <input type="text" name="name" class="textfield">
+                </td>
+
+                <td class="custom1">
+                    <p class="formtext">Email</p> 
+                    <input type="text" name="email" class="textfield">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><input type="checkbox" name="sports" value="1"> Thể Thao</label>
+                    <label><input type="checkbox" name="musics" value="2"> Âm nhạc</label>
+                    <label><input type="checkbox" name="reading" value="3"> Đọc Sách</label><br>
+                    <label><input type="checkbox" name="web" value="4"> Lướt Web</label>
+                    <label><input type="checkbox" name="gaming" value="5"> Chơi Game</label>
+                    <label><input type="checkbox" name="movies" value="6"> Điện ảnh</label><br>
+                    <label><input type="checkbox" name="travel" value="7"> Du lịch</label>
+                    <label><input type="checkbox" name="others" value="8"> Khác</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Gửi thông tin">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
