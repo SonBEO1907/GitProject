@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <label>Amount</label>
+    <input type="text" name="amount" id="amount">
+    <select id="fromCurrency" name="fromCurrency">
+        <option value="VND" selected> VND </option>
+        <option value="USD"> USD </option>
+    </select>
+    <select name="toCurrency" id="toCurrency">
+        <option value="VND"> VND </option>
+        <option value="USD" selected> USD </option>
+    </select>
+    <button type="button" onclick="convert()"> Convert</button>
+    <div id="display"></div>
+</body>
+</html>
