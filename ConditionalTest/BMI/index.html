@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <label"> Điền BMI </label>
+    <input type="text" name="" id="bmi" placeholder="Enter You BMI">
+    <button type="button" onclick="result();"> Kiểm Tra </button>
+    <hr>
+    <table>
+        <tr>
+            <th>BMI</th>
+            <th>Interpretation</th>
+        </tr>
+        <tr id="under">
+            <td> BMI &lt; 18.5 </td>
+            <td> Underweight </td>
+        </tr>
+        <tr id="normal"> 
+            <td> 18.5 &lt; BMI &lt; 25.0 </td>
+            <td> Normal </td>
+        </tr>
+        <tr id ="over">
+            <td> 25 &lt; BMI &lt; 30.0 </td>
+            <td> BMI </td>
+        </tr>
+        <tr id="obese">
+            <td> 30 &lt; BMI </td>
+            <td> Obese </td>
+        </tr>
+    </table>
+</body>
+</html>
